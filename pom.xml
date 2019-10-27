@@ -36,7 +36,6 @@
 							<templatePath>${project.basedir}/src/main/templates/panache</templatePath>
 							<filepattern>{package-name}/{class-name}Dao.java</filepattern>
 							<templatePrefix>entity/</templatePrefix>
-							<jdk5>true</jdk5>
 							<packageName>de.suchwerk.entities</packageName>
 							<!-- Defaults:-->
 							<configFile>${project.basedir}/src/main/hibernate/hibernate.cfg.xml</configFile>
