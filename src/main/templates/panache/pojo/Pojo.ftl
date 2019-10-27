@@ -2,6 +2,8 @@ ${pojo.getPackageDeclaration()}
 // Generated ${date} by Hibernate Tools ${version}
 
 <#assign classbody>
+import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
+
 <#include "PojoTypeDeclaration.ftl"/> {
 
 <#if !pojo.isInterface()>
