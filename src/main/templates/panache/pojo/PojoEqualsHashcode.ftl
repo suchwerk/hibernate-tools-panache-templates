@@ -6,13 +6,13 @@
 		 if ( !(other instanceof ${classNameToCastTo}) ) return false;
 		 ${classNameToCastTo} castOther = ( ${classNameToCastTo} ) other;
 
-		 return ${pojo.generateEquals("this", "castOther", jdk5)};
+		 return ${pojo.generateEquals("this", "castOther", true)};
    }
 
    public int hashCode() {
          int result = 17;
 
-<#foreach property in pojo.getAllPropertiesIterator()>         ${pojo.generateHashCode(property, "result", "this", jdk5)}
+<#foreach property in pojo.getAllPropertiesIterator()>         ${pojo.generateHashCode(property, "result", "this", true)}
 </#foreach>         return result;
    }
 </#if>

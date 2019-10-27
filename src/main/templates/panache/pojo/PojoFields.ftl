@@ -4,6 +4,6 @@
      */
  </#if>
     <#include "GetFieldAnnotation.ftl"/>
-    public ${pojo.getJavaTypeName(field, jdk5)} ${c2j.keyWordCheck(field.name)}<#if pojo.hasFieldInitializor(field, jdk5)> = ${pojo.getFieldInitialization(field, jdk5)}</#if>;
+    public ${pojo.getJavaTypeName(field, true)} ${c2j.keyWordCheck(field.name)}<#if pojo.hasFieldInitializor(field, true)> = ${pojo.getFieldInitialization(field, true)}</#if>;
 </#if>
 </#foreach>
