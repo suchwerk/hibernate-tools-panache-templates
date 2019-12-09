@@ -21,6 +21,6 @@ Calling maven
 mvn package
 ```
 
-will genarate the packages in `target/generated-sources/`
+will generate the packages in `target/generated-sources/`
 
 Package name can be changed directly in the pom.
